@@ -31,8 +31,10 @@ export default function Nav() {
       <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-3 md:px-6 md:pt-5">
         <div
           className={clsx(
-            "glass-dark flex w-full max-w-6xl items-center justify-between rounded-full text-on-dark transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
-            shrunk ? "px-4 py-2 md:px-5 md:py-2 shadow-lg" : "px-5 py-3.5 md:px-7 md:py-4"
+            "glass-dark flex w-full items-center justify-between text-on-dark transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+            shrunk
+              ? "max-w-5xl rounded-full px-4 py-2 shadow-xl md:px-5 md:py-2"
+              : "max-w-[1700px] rounded-2xl px-5 py-4 md:rounded-3xl md:px-8 md:py-5"
           )}
         >
           {/* logo */}
@@ -53,7 +55,7 @@ export default function Nav() {
           </Link>
 
           {/* center links */}
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 lg:flex">
             {nav.slice(0, 5).map((n) => (
               <Link
                 key={n.href}
@@ -84,13 +86,13 @@ export default function Nav() {
             </div>
             <a
               href={site.external.href}
-              className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-on-primary transition-transform active:scale-[0.97] md:inline-block"
+              className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-on-primary transition-transform active:scale-[0.97] lg:inline-block"
             >
               {site.external.label}
             </a>
             <button
               onClick={() => setOpen(true)}
-              className="text-sm font-semibold uppercase tracking-widest md:hidden"
+              className="text-sm font-semibold uppercase tracking-widest lg:hidden"
               aria-label="Open menu"
             >
               Menu
@@ -102,7 +104,7 @@ export default function Nav() {
       {/* mobile overlay */}
       <div
         className={clsx(
-          "fixed inset-0 z-[60] flex flex-col bg-ocean-abyss text-on-dark transition-transform duration-500 md:hidden",
+          "fixed inset-0 z-[60] flex flex-col bg-ocean-abyss text-on-dark transition-transform duration-500 lg:hidden",
           open ? "translate-y-0" : "-translate-y-full"
         )}
       >
