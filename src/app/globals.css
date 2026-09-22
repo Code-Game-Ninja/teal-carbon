@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Teal Carbon — design tokens (see DESIGN.md)
+   Tailwind v4 @theme: exposes tokens as utilities + CSS vars
+   ============================================================ */
+@theme {
+  /* Accent */
+  --color-primary: #1e6e63;
+  --color-primary-bright: #2c8f80;
+  --color-primary-deep: #134e46;
+  --color-on-primary: #f5f3ed;
+
+  /* DEEP world */
+  --color-ocean-abyss: #061217;
+  --color-ocean-deep: #071b22;
+  --color-ocean-teal: #0d3038;
+  --color-ocean-teal-2: #123f48;
+  --color-overlay-scrim: #04141a;
+
+  /* PAPER world */
+  --color-cream: #f5f3ed;
+  --color-paper: #efebe0;
+  --color-paper-warm: #e7e0d2;
+  --color-mist: #dce9e5;
+
+  /* Text */
+  --color-ink: #0e1e22;
+  --color-ink-soft: #37474a;
+  --color-ink-muted: #6b7b7b;
+  --color-on-dark: #f5f3ed;
+  --color-on-dark-soft: #b8c8bd;
+  --color-on-dark-muted: #7e9088;
+
+  /* Ecosystem coding */
+  --color-eco-mangrove: #2c8f80;
+  --color-eco-seagrass: #5fa88c;
+  --color-eco-saltmarsh: #b7a46a;
+  --color-eco-peatland: #8a6f4b;
+
+  /* Lines */
+  --color-hairline-dark: #1c3a40;
+  --color-hairline-light: #d8d2c4;
+  --color-trail-line: #b7a46a;
+
+  /* Fonts (bound to next/font vars in layout) */
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  /* Spacing scale extensions */
+  --spacing-section: 160px;
+  --spacing-section-sm: 96px;
+
+  /* Radius */
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Easing */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* ---------- base ---------- */
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* Lenis smooth-scroll hook (JS toggles html.lenis) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* ---------- framed container (ref: Mindloop / Opnest) ---------- */
+.frame {
+  position: relative;
+  margin: 10px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--color-cream);
+  box-shadow: 0 30px 80px -20px rgba(4, 20, 26, 0.6);
+}
+@media (min-width: 768px) {
+  .frame {
+    margin: 16px;
+    border-radius: 34px;
+  }
+}
+
+/* glass surface helpers */
+.glass {
+  background: rgba(245, 243, 237, 0.1);
+  backdrop-filter: saturate(160%) blur(16px);
+  -webkit-backdrop-filter: saturate(160%) blur(16px);
+  border: 1px solid rgba(245, 243, 237, 0.18);
+}
+.glass-dark {
+  background: rgba(6, 18, 23, 0.55);
+  backdrop-filter: saturate(160%) blur(18px);
+  -webkit-backdrop-filter: saturate(160%) blur(18px);
+  border: 1px solid rgba(245, 243, 237, 0.12);
+}
+/* soft neomorphic surface on cream */
+.neo {
+  background: var(--color-cream);
+  box-shadow:
+    8px 8px 20px rgba(14, 30, 34, 0.08),
+    -8px -8px 20px rgba(255, 255, 255, 0.7);
+}
+
+/* ---------- reusable utilities ---------- */
+
+/* Serif display helper */
+.font-display {
+  font-family: var(--font-display);
+}
+.font-serif-lead {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* Eyebrow / chapter label */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Image legibility scrim: transparent -> deep ocean */
+.scrim {
+  background: linear-gradient(
+    to bottom,
+    rgba(4, 20, 26, 0.25) 0%,
+    rgba(4, 20, 26, 0.15) 35%,
+    rgba(4, 20, 26, 0.55) 100%
+  );
+}
+
+/* Subtle paper grain for PAPER bands */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Anchor offset under fixed nav */
+:target {
+  scroll-margin-top: 96px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-primary-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: -60px;
+  z-index: 200;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
