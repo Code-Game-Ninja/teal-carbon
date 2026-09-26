@@ -61,17 +61,7 @@ export default function Hero() {
         ref={content}
         className="relative z-20 mx-auto flex max-w-3xl flex-col items-center px-6 pt-24 text-center will-change-transform"
       >
-        {/* social proof pill */}
-        <div className="glass mb-8 flex items-center gap-3 rounded-full py-1.5 pl-1.5 pr-4">
-          <div className="flex -space-x-2">
-            {hero.proof.avatars.map((a, i) => (
-              <span key={i} className="relative h-7 w-7 overflow-hidden rounded-full ring-2 ring-ocean-deep/40">
-                <Image src={a} alt="" fill sizes="28px" className="object-cover" />
-              </span>
-            ))}
-          </div>
-          <span className="text-xs text-on-dark/90">{hero.proof.text}</span>
-        </div>
+
 
         <h1 className="font-display font-normal leading-[0.95] tracking-[-0.02em] text-[clamp(2.75rem,7vw,6.5rem)]">
           {hero.title}

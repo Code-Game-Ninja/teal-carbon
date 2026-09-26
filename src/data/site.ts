@@ -225,7 +225,7 @@ export const about = {
     "The Teal Carbon Lab is the world’s first dedicated research initiative advancing the science of carbon dynamics in shallow inland (non-tidal) wetland ecosystems. Conceived under the visionary leadership of Professor Dr. Laxmi Kant Sharma, the lab reflects a long-standing commitment to conservation, scientific excellence, and sustainable development.",
     "A central objective of the Teal Carbon Lab is to translate scientific understanding into actionable Nature-based Solutions (NbS) that are locally grounded and globally scalable. Emphasising indigenous and ecosystem-based approaches, the lab contributes to climate mitigation, ecological restoration, and sustainable resource management.",
   ],
-  image: img("photo-1559825481-12a05cc00344"),
+  image: "/teal_lab_2.png",
 };
 
 export const contact = {

@@ -22,6 +22,7 @@ export default function PageHero({
         <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
       </Parallax>
       <div className="scrim absolute inset-0" />
+      <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 px-6 pb-20 pt-32 md:px-12 md:pb-28">
         <p className="eyebrow mb-6 text-on-dark-soft">{eyebrow}</p>
