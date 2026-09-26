@@ -1,0 +1,65 @@
+Teal Carbon Lab
+About:
+About Teal Carbon Lab
+The Teal Carbon Lab is the world’s first dedicated research initiative advancing the science of carbon dynamics in shallow inland (non-tidal) wetland ecosystems. Conceived under the visionary leadership of Professor Dr. Laxmi Kant Sharma, the lab reflects a long-standing commitment to conservation, scientific excellence, and sustainable development. Rooted in interdisciplinary research, the lab integrates biogeochemistry, hydrology, and GeoAI to address complex environmental challenges at regional and global scales.
+Driven by the urgent need to understand and protect fragile inland wetlands, the Teal Carbon Lab focuses on ecosystems that remain critically understudied despite their significant role in global carbon storage and climate regulation. These systems are increasingly threatened by hydro-climatic variability, land-use change, and anthropogenic pressures, leading to accelerated carbon loss and greenhouse gas emissions.
+The lab advances the concept of teal carbon as a process-based framework, capturing the dynamic interactions between carbon sequestration and methane emissions in freshwater wetland environments. By combining field-based observations, satellite data, and machine learning approaches, the lab generates high-resolution, policy-relevant insights into wetland carbon processes.
+A central objective of the Teal Carbon Lab is to translate scientific understanding into actionable Nature-based Solutions (NbS) that are locally grounded and globally scalable. Emphasising indigenous and ecosystem-based approaches, the lab contributes to climate mitigation, ecological restoration, and sustainable resource management.
+Through its Living Lab approach, the initiative bridges science, policy, and practice, positioning inland wetlands as critical natural climate solutions for addressing global environmental challenges and achieving long-term sustainability.
+Visionary
+Professor (Dr.) Laxmi Kant Sharma is a pioneering environmental scientist in India advancing the emerging concept of teal carbon to redefine the role of inland wetlands in the global carbon cycle. His work integrates cutting-edge geospatial science with deeply rooted indigenous knowledge to address pressing environmental challenges.
+Through visionary leadership, he champions nature-based solutions that transform fragile ecosystems into resilient, climate-adaptive landscapes, positioning science as a bridge between sustainability, conservation, and real-world impact.
+His research bridges science, policy, and practice, transforming fragile wetland ecosystems into resilient natural climate solutions.
+With a deep commitment to sustainability, he continues to shape innovative pathways for conservation, climate resilience, and sustainable development.
+https://www.laxmikant.org/
+https://www.laxmikant.org/
+Our motivation
+The conceptual foundation of the Teal Carbon Lab is inspired by the pioneering work of Dr. Amanda Nahlik and Professor Dr. Siobhan Fennessy, who first articulated the concept of teal carbon to highlight the critical role of shallow inland (non-tidal) wetlands in the global carbon cycle. Their research brought global attention to freshwater wetland ecosystems as significant, yet underrepresented, carbon reservoirs with complex biogeochemical dynamics.
+Building on their foundational vision, our work seeks to expand and operationalise the teal carbon framework through advanced field measurements, remote sensing, and GeoAI-driven modelling. Their contributions have not only shaped the scientific understanding of inland wetland carbon processes but have also motivated the development of integrated approaches to quantify, monitor, and manage these ecosystems under changing climatic conditions.
+The Teal Carbon Lab carries forward this legacy by transforming conceptual insights into actionable, science-based Nature-based Solutions, aimed at addressing pressing global challenges related to climate change, wetland degradation, and sustainable ecosystem management.
+https://www.epa.gov/sciencematters/meet-epa-wetland-ecologist-amanda-m-nahlik-phd
+https://www.ramsar.org/person/prof-siobhan-fennessy
+Vision:
+“To establish the Teal Carbon Lab as a globally leading centre of excellence advancing the science of inland wetland carbon dynamics by integrating biogeochemistry, hydrology, and GeoAI, and to redefine climate mitigation pathways through process-based understanding of carbon–water–methane interactions in climate-sensitive ecosystems.”
+or
+“We envision a future where inland wetlands are recognised as critical components of the global carbon cycle, enabling science-driven policies, sustainable management, and scalable nature-based solutions for climate resilience and carbon neutrality.”
+Mission: 
+“The Teal Carbon Lab is dedicated to advancing cutting-edge, interdisciplinary research that quantifies, models, and translates teal carbon ecosystems into actionable nature-based climate solutions.”
+Front Page
+Title:
+Advancing Teal Carbon Science for Climate-Resilient Shallow Inland (non-tidal) Wetlands
+Subtitle:
+The world’s first Teal Carbon Lab dedicated to understanding carbon-water-methane interactions in inland wetlands through GeoAI, multi-sensor remote sensing, and field-based science.
+or
+The world’s first Teal Carbon Lab translating cutting-edge science into climate solutions by integrating field observations, satellite data, and GeoAI for inland wetland ecosystems.
+Tagline:
+From Blue Carbon to Teal Carbon: Redefining Inland Wetland Climate Science
+WHAT IS TEAL CARBON
+“Teal carbon refers to carbon stored and cycled within all types of shallow inland (non-tidal) wetlands, including marshes, swamps, peatlands, and other lacustrine, riverine or palsutrine systems .”
+“These ecosystems regulate climate through a complex balance of carbon sequestration and greenhouse gas emissions, particularly methane.”
+“Recent global synthesis demonstrates that teal carbon ecosystems store hundreds of petagrams of carbon globally, with peatlands alone contributing the largest share, while simultaneously acting as dynamic sources of CH₄ under changing hydro-climatic conditions”
+(Kumar et al., 2025)
+“Unlike static carbon classifications, teal carbon represents a process-driven framework, capturing the coupled dynamics of hydrology, biogeochemistry, and ecosystem function.”
+Flagship Projects (Living Lab)
+“Our Teal Carbon Living Lab integrates field measurements, laboratory analysis, and satellite observations to generate policy-relevant insights.”
+Research Pillers
+Research Publication
+Teal Carbon Global Synthesis
+“First global framework quantifying teal carbon stocks and emissions identifies wetlands as high-potential natural climate solutions”
+Seasonal variability in Carbon storage in semi-arid teal carbon ecosystems
+Keoladeo National Park (Ramsar Site)
+SOC up to 251 t C/ha (post-monsoon) 
+Strong seasonal variability in carbon storage 
+Sambhar Lake (India’s Largest Inland Salt Lake)
+Carbon stocks up to 143 t C/ha
+Significant pre-monsoon carbon loss due to hydrological stress
+Kumar, S., Sharma, L. K., & Fennessy, M. S. (2025). Global teal carbon: Stocks, sequestration, and its potential role in climate change mitigation. Science of The Total Environment, 995, 180128. https://doi.org/10.1016/j.scitotenv.2025.180128
+Kumar, S., & Sharma, L. K. (2025). Assessing spatial and seasonal variability in soil organic carbon fractions of teal carbon in semi-arid Ramsar wetlands of India as a natural climate solution. Discover Soil, 2(1), 66. https://doi.org/10.1007/s44378-025-00085-w
+Global distribution of teal carbon ecosystem
+Global Teal carbon ecosystems (area-wise)
+Teal carbon cycle
+Global Methane and Carbon dioxide trend from global teal carbon ecosystem using GOSAT and Sentinel-5P remote sensing data
+Latitudinal variability of methane and carbon dioxide from teal carbon ecosystemms
+SOC variability at KNP and Sl during Post and Pre-monsoon season
+Seasonal variability of methane and its drivers in KNP and SL
+https://www.laxmikant.org/about-1-2

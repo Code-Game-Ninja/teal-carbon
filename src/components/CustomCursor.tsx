@@ -19,8 +19,12 @@ export default function CustomCursor() {
     const coarse = window.matchMedia("(pointer: coarse)").matches;
     if (coarse || prefersReducedMotion()) return;
     setEnabled(true);
+  }, []);
 
-    const el = dot.current!;
+  useEffect(() => {
+    if (!enabled || !dot.current) return;
+
+    const el = dot.current;
     gsap.set(el, { x: -100, y: -100 });
     const xTo = gsap.quickTo(el, "x", { duration: 0.35, ease: "power3" });
     const yTo = gsap.quickTo(el, "y", { duration: 0.35, ease: "power3" });
@@ -53,7 +57,7 @@ export default function CustomCursor() {
       document.removeEventListener("pointerenter", enter);
       window.removeEventListener("blur", leave);
     };
-  }, []);
+  }, [enabled]);
 
   if (!enabled) return null;
 

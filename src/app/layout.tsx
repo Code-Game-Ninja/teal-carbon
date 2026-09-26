@@ -5,6 +5,10 @@ import CustomCursor from "@/components/CustomCursor";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tealcarbon.example"),
@@ -28,18 +32,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${cormorant.variable} ${manrope.variable} ${plexMono.variable}`}
+      className={cn(fraunces.variable, cormorant.variable, manrope.variable, plexMono.variable, "font-sans", geist.variable)}
     >
-      <body className="bg-ocean-abyss">
+      <body className="bg-cream antialiased">
         <a href="#main" className="skip-link">Skip to content</a>
         <CustomCursor />
         <Nav />
         <SmoothScroll>
-          {/* framed rounded container over dark backdrop (ref: Mindloop / Opnest) */}
-          <div className="frame">
-            <div id="main">{children}</div>
-            <Footer />
-          </div>
+          <div id="main">{children}</div>
+          <Footer />
         </SmoothScroll>
       </body>
     </html>

@@ -9,10 +9,10 @@ const img = (id: string, w = 2000) =>
 
 export const site = {
   name: "Teal Carbon Lab",
-  tagline: "Coastal & wetland carbon science",
+  tagline: "Advancing Teal Carbon Science for Climate-Resilient Shallow Inland (non-tidal) Wetlands",
   acknowledgment:
     "We acknowledge the Traditional Custodians of the coastlines and wetlands on which this research takes place.",
-  external: { label: "Visit the lab", href: "#" },
+  external: { label: "Visit the lab", href: "https://www.laxmikant.org/" },
 };
 
 export const nav = [
@@ -21,19 +21,20 @@ export const nav = [
   { label: "Impact", href: "/impact" },
   { label: "Map", href: "/map" },
   { label: "About", href: "/about" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const hero = {
   eyebrow: "Teal Carbon Lab",
-  headline: ["THE COAST", "HOLDS MORE", "THAN WATER."],
-  title: "The coast holds more than water.",
-  lead: "Join our field notes for research updates from the mangroves, marshes and meadows storing our carbon.",
+  headline: ["FROM BLUE CARBON", "TO TEAL", "CARBON"],
+  title: "Redefining Inland Wetland Climate Science",
+  lead: "The world's first Teal Carbon Lab translating cutting-edge science into climate solutions by integrating field observations, satellite data, and GeoAI for inland wetland ecosystems.",
   cue: "Explore the research",
   image: img("photo-1507525428034-b723cf961d3e"),
   chapter: { index: "01", total: "05" },
   proof: {
-    text: "1,200+ researchers & partners",
+    text: "Pioneering teal carbon science",
     avatars: [
       img("photo-1544005313-94ddf0286df2", 120),
       img("photo-1494790108377-be9c29b29330", 120),
@@ -43,14 +44,14 @@ export const hero = {
 };
 
 export const intro = {
-  eyebrow: "01 / Why teal carbon",
+  eyebrow: "01 / WHAT IS TEAL CARBON",
   statement:
-    "Wetlands and coastal ecosystems are some of Earth's most powerful natural carbon systems.",
-  body: "Mangroves, saltmarshes, seagrass meadows and freshwater wetlands capture carbon, protect coastlines, and support life — storing it in waterlogged soils for millennia.",
+    "Teal carbon refers to carbon stored and cycled within all types of shallow inland (non-tidal) wetlands, including marshes, swamps, peatlands, and other lacustrine, riverine or palsutrine systems.",
+  body: "These ecosystems regulate climate through a complex balance of carbon sequestration and greenhouse gas emissions. Unlike static classifications, teal carbon represents a process-driven framework capturing the coupled dynamics of hydrology and biogeochemistry.",
 };
 
 export type Ecosystem = {
-  key: "mangrove" | "seagrass" | "saltmarsh" | "peatland";
+  key: "marsh" | "swamp" | "peatland" | "lacustrine";
   name: string;
   blurb: string;
   color: string; // CSS var for styling
@@ -60,45 +61,45 @@ export type Ecosystem = {
 
 export const ecosystems: Ecosystem[] = [
   {
-    key: "mangrove",
-    name: "Mangroves",
-    blurb: "Tidal forests that lock carbon into deep, oxygen-poor soils.",
+    key: "marsh",
+    name: "Marshes",
+    blurb: "Shallow inland wetlands that sequester carbon in waterlogged soils.",
     color: "var(--color-eco-mangrove)",
     hex: "#2C8F80",
     image: img("photo-1518837695005-2083093ee35b"),
   },
   {
-    key: "seagrass",
-    name: "Seagrass",
-    blurb: "Underwater meadows that bury carbon on the seabed.",
+    key: "swamp",
+    name: "Swamps",
+    blurb: "Forested freshwater wetlands balancing carbon storage with methane emissions.",
     color: "var(--color-eco-seagrass)",
     hex: "#5FA88C",
     image: img("photo-1471922694854-ff1b63b20054"),
   },
   {
-    key: "saltmarsh",
-    name: "Saltmarsh",
-    blurb: "Coastal grasslands flooded by the tides, rich in buried carbon.",
+    key: "peatland",
+    name: "Peatlands",
+    blurb: "Thick layers of decayed organic matter storing the largest share of teal carbon.",
     color: "var(--color-eco-saltmarsh)",
     hex: "#B7A46A",
     image: img("photo-1500375592092-40eb2168fd21"),
   },
   {
-    key: "peatland",
-    name: "Wetlands",
-    blurb: "Freshwater peat systems — the teal end of the carbon spectrum.",
+    key: "lacustrine",
+    name: "Lacustrine Systems",
+    blurb: "Lake-associated wetlands with highly dynamic carbon cycling profiles.",
     color: "var(--color-eco-peatland)",
     hex: "#8A6F4B",
     image: img("photo-1552083375-1447ce886485"),
   },
 ];
 
-export type Stat = { value: number; suffix?: string; label: string; source: string };
+export type Stat = { value: number | string; suffix?: string; label: string; source: string };
 
 export const stats: Stat[] = [
-  { value: 51700, suffix: " ha", label: "Potential restoration area", source: "PLACEHOLDER — use verified figure" },
-  { value: 115596, label: "tCO₂e captured / year", source: "PLACEHOLDER — use verified figure" },
-  { value: 34, label: "Active research projects", source: "PLACEHOLDER" },
+  { value: 251, suffix: " t C/ha", label: "Max SOC at Keoladeo National Park", source: "Post-monsoon field analysis" },
+  { value: 143, suffix: " t C/ha", label: "Carbon stocks at Sambhar Lake", source: "Pre-monsoon measurement" },
+  { value: "Hundreds", suffix: " of Pg", label: "Carbon stored globally in teal systems", source: "Global Synthesis (Kumar et al., 2025)" },
 ];
 
 export type ResearchArea = {
@@ -115,55 +116,29 @@ export type ResearchArea = {
 export const research: ResearchArea[] = [
   {
     index: "01",
-    slug: "blue-carbon",
-    title: "Blue Carbon",
-    blurb: "Measuring carbon in coastal marine ecosystems.",
+    slug: "teal-carbon-synthesis",
+    title: "Teal Carbon Global Synthesis",
+    blurb: "Quantifying teal carbon stocks and emissions globally.",
     image: img("photo-1518837695005-2083093ee35b"),
-    lead: "Coastal marine ecosystems bury carbon in their soils faster, and hold it longer, than almost any forest on land.",
+    lead: "The first global framework quantifying teal carbon stocks and emissions identifies wetlands as high-potential natural climate solutions.",
     body: [
-      "Blue carbon is the carbon captured and stored by ocean and coastal ecosystems — principally mangroves, tidal saltmarshes and seagrass meadows. Waterlogged, oxygen-poor soils slow decomposition, letting carbon accumulate for centuries to millennia.",
-      "Our team quantifies these stores with soil cores, allometric surveys and remote sensing, building the evidence base that lets restoration count toward real climate targets.",
+      "Recent global synthesis demonstrates that teal carbon ecosystems store hundreds of petagrams of carbon globally, with peatlands alone contributing the largest share.",
+      "Simultaneously, they act as dynamic sources of methane under changing hydro-climatic conditions.",
     ],
-    methods: ["Soil-core sampling", "Allometric biomass surveys", "Satellite & drone mapping", "Carbon-flux modelling"],
+    methods: ["Global Synthesis", "Remote Sensing", "Carbon-flux modelling", "GeoAI"],
   },
   {
     index: "02",
-    slug: "teal-carbon",
-    title: "Teal Carbon",
-    blurb: "Freshwater wetland and peatland carbon dynamics.",
+    slug: "seasonal-variability",
+    title: "Seasonal Variability in Semi-Arid Ecosystems",
+    blurb: "Tracking carbon storage in semi-arid teal carbon systems.",
     image: img("photo-1552083375-1447ce886485"),
-    lead: "Teal carbon is the freshwater counterpart to blue — peatlands and inland wetlands that store immense carbon while cycling water and nutrients.",
+    lead: "Understanding how seasonal changes affect carbon dynamics in inland wetlands.",
     body: [
-      "Freshwater wetlands occupy a fraction of Earth's surface yet hold a disproportionate share of soil carbon. When drained they flip from sink to source, so understanding their hydrology is central to protecting them.",
-      "We track water tables, greenhouse-gas exchange and vegetation change to map where teal-carbon systems are most at risk — and most worth defending.",
+      "We track the latitudinal and seasonal variability of methane and carbon dioxide from teal carbon ecosystems.",
+      "Using GOSAT and Sentinel-5P remote sensing data, we map the global methane and carbon dioxide trends to inform policy.",
     ],
-    methods: ["Water-table monitoring", "Eddy-covariance flux towers", "Vegetation transects", "Peat-depth surveys"],
-  },
-  {
-    index: "03",
-    slug: "ecosystem-restoration",
-    title: "Ecosystem Restoration",
-    blurb: "Turning degraded coastlines back into carbon sinks.",
-    image: img("photo-1500375592092-40eb2168fd21"),
-    lead: "Restoration reactivates the carbon pump — but only if hydrology, species and timing are right.",
-    body: [
-      "Reconnecting tides to a drained marsh, or replanting mangroves along an eroding shore, can return a degraded site to a functioning carbon sink within years.",
-      "We design and monitor restoration so outcomes are measurable, durable and beneficial to the communities and species that depend on these coasts.",
-    ],
-    methods: ["Hydrological reconnection", "Assisted revegetation", "Long-term monitoring plots", "Community co-design"],
-  },
-  {
-    index: "04",
-    slug: "climate-adaptation",
-    title: "Climate Adaptation",
-    blurb: "How natural systems buffer communities from change.",
-    image: img("photo-1505142468610-359e7d316be0"),
-    lead: "Healthy coasts are infrastructure — absorbing storm surge, holding sediment and buying time against rising seas.",
-    body: [
-      "Beyond carbon, coastal and wetland ecosystems shield people from flooding and erosion. We quantify these protective services so they can be valued alongside built defences.",
-      "Our adaptation work links ecological data to the decisions of planners, insurers and coastal communities.",
-    ],
-    methods: ["Storm-surge modelling", "Sediment-budget analysis", "Natural-capital valuation", "Scenario planning"],
+    methods: ["GOSAT Monitoring", "Sentinel-5P Remote Sensing", "Field-based Science", "Seasonal Tracking"],
   },
 ];
 
@@ -186,51 +161,35 @@ export type Project = {
 export const projects: Project[] = [
   {
     index: "01",
-    slug: "coastal-blue",
-    kind: "Map",
-    title: "Coastal Blue",
-    year: "2026",
+    slug: "keoladeo-national-park",
+    kind: "Measure",
+    title: "Keoladeo National Park",
+    year: "2025",
     status: "Active",
-    location: "Northern coastline",
-    blurb: "Mapping the coastline to find where restoration makes the greatest difference.",
+    location: "Ramsar Site, India",
+    blurb: "Assessing seasonal variability in carbon storage.",
     image: img("photo-1507525428034-b723cf961d3e"),
     body: [
-      "Coastal Blue is a continental-scale mapping effort combining satellite imagery, tidal models and field validation to identify the sites where restoration would return the most carbon and protection per hectare.",
-      "The result is an open prioritisation layer that planners and funders can use to direct restoration where it matters most.",
+      "This project focuses on the Keoladeo National Park, a critical Ramsar site. We discovered SOC up to 251 t C/ha post-monsoon.",
+      "The ecosystem exhibits strong seasonal variability in carbon storage, which we track to understand the impact of hydro-climatic changes.",
     ],
     gallery: [img("photo-1507525428034-b723cf961d3e", 1200), img("photo-1505142468610-359e7d316be0", 1200)],
   },
   {
     index: "02",
-    slug: "marsh-revival",
-    kind: "Restore",
-    title: "Marsh Revival",
-    year: "2025",
-    status: "In progress",
-    location: "Central flats",
-    blurb: "Rehydrating drained saltmarsh to reactivate carbon burial.",
-    image: img("photo-1500375592092-40eb2168fd21"),
-    body: [
-      "Marsh Revival reconnects tidal flow to marshland drained decades ago for grazing. As salinity and inundation return, marsh vegetation re-establishes and soils begin storing carbon again.",
-      "We monitor accretion, greenhouse-gas flux and biodiversity to document the recovery from day one.",
-    ],
-    gallery: [img("photo-1500375592092-40eb2168fd21", 1200), img("photo-1471922694854-ff1b63b20054", 1200)],
-  },
-  {
-    index: "03",
-    slug: "seabed-stores",
-    kind: "Measure",
-    title: "Seabed Stores",
+    slug: "sambhar-lake",
+    kind: "Map",
+    title: "Sambhar Lake",
     year: "2025",
     status: "Active",
-    location: "West shelf",
-    blurb: "Quantifying seagrass carbon across the continental shelf.",
-    image: img("photo-1471922694854-ff1b63b20054"),
+    location: "India’s Largest Inland Salt Lake",
+    blurb: "Quantifying carbon stocks and hydrological stress.",
+    image: img("photo-1500375592092-40eb2168fd21"),
     body: [
-      "Seabed Stores maps and cores seagrass meadows to measure the carbon locked beneath them — some of the least-counted and most-threatened stores in the ocean.",
-      "The project pairs autonomous survey with diver sampling to build the first shelf-wide seagrass carbon inventory for the region.",
+      "Sambhar Lake represents India's largest inland salt lake. We measured carbon stocks up to 143 t C/ha.",
+      "Our research highlights a significant pre-monsoon carbon loss due to hydrological stress.",
     ],
-    gallery: [img("photo-1471922694854-ff1b63b20054", 1200), img("photo-1518837695005-2083093ee35b", 1200)],
+    gallery: [img("photo-1500375592092-40eb2168fd21", 1200), img("photo-1471922694854-ff1b63b20054", 1200)],
   },
 ];
 
@@ -239,10 +198,9 @@ export const getProject = (slug: string) => projects.find((p) => p.slug === slug
 export type Person = { name: string; role: string; image: string };
 
 export const researchers: Person[] = [
-  { name: "Dr. Marin Ochoa", role: "Lab Director · Blue carbon", image: img("photo-1544005313-94ddf0286df2", 800) },
-  { name: "Dr. Talia Reyes", role: "Wetland biogeochemist", image: img("photo-1494790108377-be9c29b29330", 800) },
-  { name: "Sam Whitlock", role: "Remote sensing lead", image: img("photo-1500648767791-00dcc994a43e", 800) },
-  { name: "Dr. Ana Fielding", role: "Restoration ecologist", image: img("photo-1573497019940-1c28c88b4f3e", 800) },
+  { name: "Prof. (Dr.) Laxmi Kant Sharma", role: "Visionary & Lab Lead", image: img("photo-1544005313-94ddf0286df2", 800) },
+  { name: "Dr. Amanda Nahlik", role: "Pioneer in Teal Carbon", image: img("photo-1494790108377-be9c29b29330", 800) },
+  { name: "Prof. Dr. Siobhan Fennessy", role: "Pioneer in Teal Carbon", image: img("photo-1500648767791-00dcc994a43e", 800) },
 ];
 
 export const partners = [
@@ -255,19 +213,17 @@ export const partners = [
 export type Publication = { year: string; title: string; venue: string };
 
 export const publications: Publication[] = [
-  { year: "2026", title: "Continental blue-carbon prioritisation from tidal and satellite data", venue: "Nature Climate Change" },
-  { year: "2025", title: "Carbon recovery trajectories in reconnected saltmarsh", venue: "Global Change Biology" },
-  { year: "2025", title: "Shelf-wide seagrass carbon inventory methods", venue: "Frontiers in Marine Science" },
-  { year: "2024", title: "Teal carbon: freshwater wetlands in national accounting", venue: "Environmental Research Letters" },
+  { year: "2025", title: "Global teal carbon: Stocks, sequestration, and its potential role in climate change mitigation", venue: "Science of The Total Environment" },
+  { year: "2025", title: "Assessing spatial and seasonal variability in soil organic carbon fractions of teal carbon in semi-arid Ramsar wetlands of India as a natural climate solution", venue: "Discover Soil" },
 ];
 
 export const about = {
   eyebrow: "About the lab",
   mission:
-    "We turn coastal and wetland ecosystems into measurable climate solutions.",
+    "The Teal Carbon Lab is dedicated to advancing cutting-edge, interdisciplinary research that quantifies, models, and translates teal carbon ecosystems into actionable nature-based climate solutions.",
   body: [
-    "Teal Carbon Lab is an interdisciplinary research group working across mangroves, saltmarshes, seagrass and freshwater wetlands. We measure the carbon these systems store, model where restoration will have the greatest effect, and work with communities to put that science into the ground.",
-    "Our work spans field ecology, biogeochemistry, remote sensing and policy — because protecting these ecosystems is as much a human question as a scientific one.",
+    "The Teal Carbon Lab is the world’s first dedicated research initiative advancing the science of carbon dynamics in shallow inland (non-tidal) wetland ecosystems. Conceived under the visionary leadership of Professor Dr. Laxmi Kant Sharma, the lab reflects a long-standing commitment to conservation, scientific excellence, and sustainable development.",
+    "A central objective of the Teal Carbon Lab is to translate scientific understanding into actionable Nature-based Solutions (NbS) that are locally grounded and globally scalable. Emphasising indigenous and ecosystem-based approaches, the lab contributes to climate mitigation, ecological restoration, and sustainable resource management.",
   ],
   image: img("photo-1559825481-12a05cc00344"),
 };
@@ -290,18 +246,15 @@ export type MapNode = {
   tco2e: number;
 };
 
-// Placeholder coordinates along the SE Queensland coast — swap for real sites.
 export const mapNodes: MapNode[] = [
-  { id: "n1", name: "Great Sandy Strait", eco: "mangrove", lat: -25.42, lng: 152.97, hectares: 8200, tco2e: 19400 },
-  { id: "n2", name: "Moreton Bay Flats", eco: "saltmarsh", lat: -27.32, lng: 153.18, hectares: 12600, tco2e: 24100 },
-  { id: "n3", name: "Eastern Banks", eco: "seagrass", lat: -27.18, lng: 153.42, hectares: 15300, tco2e: 41200 },
-  { id: "n4", name: "Logan Wetland", eco: "peatland", lat: -27.72, lng: 153.28, hectares: 9600, tco2e: 18700 },
+  { id: "n1", name: "Keoladeo National Park", eco: "marsh", lat: 27.1593, lng: 77.5218, hectares: 2873, tco2e: 721000 },
+  { id: "n2", name: "Sambhar Lake", eco: "lacustrine", lat: 26.9113, lng: 75.1764, hectares: 19000, tco2e: 2717000 },
 ];
 
-export const mapCenter: [number, number] = [-27.05, 153.2];
+export const mapCenter: [number, number] = [27.03, 76.34];
 
 export const finalCta = {
-  headline: ["THE FUTURE", "IS SOMETHING", "WE CAN RESTORE."],
+  headline: ["NATURE-BASED", "CLIMATE", "SOLUTIONS."],
   cta: "Explore our research",
   image: img("photo-1518837695005-2083093ee35b"),
 };

@@ -15,7 +15,7 @@ export default function Hero() {
 
   useIsomorphicLayoutEffect(() => {
     const el = section.current;
-    if (!el || prefersReducedMotion()) return;
+    if (!el || prefersReducedMotion() || !imageWrap.current || !content.current) return;
 
     const ctx = gsap.context(() => {
       // background image zooms in to fill as you scroll

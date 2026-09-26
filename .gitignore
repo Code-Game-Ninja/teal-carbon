@@ -6,3 +6,6 @@
 .env*
 .DS_Store
 next-env.d.ts
+
+# Ignore sensitive data and images
+

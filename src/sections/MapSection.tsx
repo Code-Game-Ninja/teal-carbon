@@ -45,13 +45,13 @@ export default function MapSection() {
             <div className="mt-8 space-y-5">
               <div>
                 <p className="font-display text-4xl font-light">
-                  {selected.hectares.toLocaleString()}
+                  {selected.hectares.toLocaleString("en-US")}
                   <span className="text-lg"> ha</span>
                 </p>
                 <p className="font-mono text-xs text-on-dark-muted">restoration potential</p>
               </div>
               <div>
-                <p className="font-display text-4xl font-light">{selected.tco2e.toLocaleString()}</p>
+                <p className="font-display text-4xl font-light">{selected.tco2e.toLocaleString("en-US")}</p>
                 <p className="font-mono text-xs text-on-dark-muted">tCO₂e / year</p>
               </div>
             </div>
