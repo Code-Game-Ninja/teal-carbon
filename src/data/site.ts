@@ -31,7 +31,7 @@ export const hero = {
   title: "Redefining Inland Wetland Climate Science",
   lead: "The world's first Teal Carbon Lab translating cutting-edge science into climate solutions by integrating field observations, satellite data, and GeoAI for inland wetland ecosystems.",
   cue: "Explore the research",
-  image: img("photo-1507525428034-b723cf961d3e"),
+  image: "/hero.png",
   chapter: { index: "01", total: "05" },
   proof: {
     text: "Pioneering teal carbon science",

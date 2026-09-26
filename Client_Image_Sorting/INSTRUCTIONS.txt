@@ -1,0 +1,64 @@
+========================================================================
+TEAL CARBON LAB - IMAGE SORTING INSTRUCTIONS
+========================================================================
+
+Hello! To get the website ready, we need your help picking the best 
+photos for the new Teal Carbon Lab website. 
+
+All of your raw images have been placed in the "Unsorted_Images" folder. 
+Please review them and drag-and-drop the best ones into the appropriate 
+categorised folders (numbered 1 through 4).
+
+Here is a guide on what we need for each folder:
+
+------------------------------------------------------------------------
+1_Hero_and_Headers
+------------------------------------------------------------------------
+WHAT IT'S FOR: The big, impactful images at the very top of each page 
+(Home, About, Research, etc.).
+WHAT TO LOOK FOR: 
+ - High-resolution, wide (landscape) orientation.
+ - Sweeping landscapes, beautiful drone shots of wetlands, or highly 
+   cinematic nature shots.
+ - Nothing too busy in the center so that text can be read over it.
+HOW MANY: Pick your absolute best 5 to 10 images.
+
+------------------------------------------------------------------------
+2_Projects_and_Ecosystems
+------------------------------------------------------------------------
+WHAT IT'S FOR: The sections detailing specific ecosystems (Marshes, 
+Swamps, Peatlands, etc.) and active projects (e.g., Keoladeo, Sambhar Lake).
+WHAT TO LOOK FOR: 
+ - Distinctive shots that clearly represent specific ecosystems.
+ - Images showing fieldwork, carbon measurement, or local environments.
+HOW MANY: Around 10 to 15 images. 
+
+------------------------------------------------------------------------
+3_Team_and_Researchers
+------------------------------------------------------------------------
+WHAT IT'S FOR: The "About" page and team profiles.
+WHAT TO LOOK FOR: 
+ - Clear, professional, or active fieldwork portraits of the team.
+ - Ensure faces are visible and well-lit. 
+HOW MANY: 1 profile picture per team member + a few group shots.
+
+------------------------------------------------------------------------
+4_General_Gallery
+------------------------------------------------------------------------
+WHAT IT'S FOR: The masonry gallery page and miscellaneous filler images.
+WHAT TO LOOK FOR:
+ - A good mix of everything: landscapes, action shots of researchers, 
+   wildlife, macro shots of flora/fauna, etc.
+HOW MANY: Pick the best 20 to 30 images to showcase the lab's work. 
+(Any more than 30 might slow down the website).
+
+
+WHAT HAPPENS NEXT?
+===================
+Once you have moved the files from "Unsorted_Images" into the numbered 
+folders, send this entire "Client_Image_Sorting" folder back to the 
+development team (via ZIP, Google Drive, or WeTransfer). We will take it 
+from there, compress the images for web performance, and integrate them 
+straight into the website!
+
+Thank you!
