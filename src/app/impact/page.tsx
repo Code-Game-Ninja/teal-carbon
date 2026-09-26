@@ -25,11 +25,18 @@ export default function ImpactPage() {
         <Reveal stagger className="mx-auto grid max-w-6xl gap-12 md:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label}>
-              <CountUp
-                value={s.value}
-                suffix={s.suffix}
-                className="block font-display text-[clamp(3rem,7vw,6.5rem)] font-light leading-none tracking-[-0.02em] text-primary"
-              />
+              {typeof s.value === "number" ? (
+                <CountUp
+                  value={s.value}
+                  suffix={s.suffix}
+                  className="block font-display text-[clamp(3rem,7vw,6.5rem)] font-light leading-none tracking-[-0.02em] text-primary"
+                />
+              ) : (
+                <span className="block font-display text-[clamp(3rem,7vw,6.5rem)] font-light leading-none tracking-[-0.02em] text-primary">
+                  {s.value}
+                  {s.suffix}
+                </span>
+              )}
               <p className="mt-4 text-lg text-ink">{s.label}</p>
               <p className="mt-2 font-mono text-xs text-ink-muted">{s.source}</p>
             </div>
