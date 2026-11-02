@@ -8,7 +8,7 @@ import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tealcarbon.example"),
@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     siteName: "Teal Carbon Lab",
   },
   twitter: { card: "summary_large_image", title: "Teal Carbon Lab" },
+  verification: {
+    other: {
+      "shravani-site-verification": "shr_376c557841d88cfde5c3bfcfaba8332020479253ebaa7a00",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
