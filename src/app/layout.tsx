@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { fraunces, cormorant, manrope, plexMono } from "@/lib/fonts";
 import SmoothScroll from "@/components/SmoothScroll";
 import CustomCursor from "@/components/CustomCursor";
@@ -47,6 +48,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div id="main">{children}</div>
           <Footer />
         </SmoothScroll>
+        <Script
+          src="https://shravani.xyz/widget/widget.js?id=38dd4575-7a3d-4e13-8cec-e6cb388fd905"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
